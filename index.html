@@ -4,14 +4,6 @@
 <meta charset="UTF-8">
 <title>room</title>
 <style>
-
-  #top-page { /* ★ body ではなく #top-page を指定 */
-  background-image: url('bg_top.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-  
   body {
     background: #fafafa;
     font-family: sans-serif;
@@ -24,16 +16,28 @@
     border: 1px solid #ddd;
     height: 600px;
   }
+.room-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* containerの幅いっぱいに広げる */
+    height: 100%; /* containerの高さいっぱいに広げる */
+    z-index: 10; /* Hotspotよりも手前に来ないように z-index を低く設定 */
+    object-fit: cover; /* 画像がcontainerサイズに合うように調整 */
+  }
+  
   .hotspot {
     position: absolute;
     background: rgba(255,0,0,0.2); /* 後で透明にする */
   }
 </style>
 </head>
-<body id="top-page">
+<body>
 
 <h1>砂漠のさかな</h1>
 <div class="container">
+
+  <img src="bg_top.png" alt="部屋のイラスト" class="room-image">
 
   <!-- VRゴーグル：VRChat -->
   <a href="vrchat/"
