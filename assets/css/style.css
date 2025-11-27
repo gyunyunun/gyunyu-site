@@ -6,10 +6,10 @@
 }
 /* <h1>のフォントと位置を設定する */
 h1 {
-  text-align: center; 
+  text-align: left; 
   margin-top: 30px; 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
-  font-size: 32px;
+  font-size: 20px;
   color: #333;
 }
 /* 本文コンテンツ（日記など）をデフォルトの幅で中央に配置する */
