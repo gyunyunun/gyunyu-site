@@ -12,3 +12,18 @@ h1 {
   font-size: 32px;
   color: #333;
 }
+/* 本文コンテンツ（日記など）をデフォルトの幅で中央に配置する */
+.page-content {
+    /* ページの幅を制限する。テーマのデフォルトは通常1000pxか1200px程度 */
+    max-width: 1000px; 
+    
+    /* 左右の余白を自動にし、中央寄せにする */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* 上下の余白（これは任意ですが、見た目を整えます） */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px; /* 左右に少しパディングを持たせることで、端にコンテンツが貼り付くのを防ぎます */
+    padding-right: 15px;
+}
