@@ -1,0 +1,14 @@
+/* GitHub Pagesが自動で生成するヘッダーやナビゲーションを非表示にする */
+.site-header, 
+.site-nav,
+.page-header {
+    display: none !important; 
+}
+/* <h1>のフォントと位置を設定する */
+h1 {
+  text-align: center; 
+  margin-top: 30px; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size: 32px;
+  color: #333;
+}
