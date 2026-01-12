@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "diary/20260112.md",
+                "file": "_note/みちゃだめだよ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260112"
+              "title": "みちゃだめだよ"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "diary/20260112.md",
+                "file": "_note/みちゃだめだよ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "20260112へのバックリンク"
+              "title": "みちゃだめだよへのバックリンク"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "diary/20260112.md",
+                "file": "_note/みちゃだめだよ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "20260112からのアウトゴーイングリンク"
+              "title": "みちゃだめだよからのアウトゴーイングリンク"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "diary/20260112.md",
+                "file": "_note/みちゃだめだよ.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "20260112のアウトライン"
+              "title": "みちゃだめだよのアウトライン"
             }
           }
         ]
@@ -168,10 +168,12 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "c49cc6a03094c1dc",
+  "active": "072c81b7c18ac44e",
   "lastOpenFiles": [
-    "assets/images/omote_kari.jpg",
     "diary/20260112.md",
+    "_note/みちゃだめだよ.md",
+    "_note",
+    "assets/images/omote_kari.jpg",
     "diary/index.md",
     "diary/20251126.md",
     "diary/20251125.md",
