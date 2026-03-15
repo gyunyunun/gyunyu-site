@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "diary/20260112.md",
+                "file": "_note/デジタルガーデン.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260112"
+              "title": "デジタルガーデン"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
@@ -170,17 +171,21 @@
   },
   "active": "072c81b7c18ac44e",
   "lastOpenFiles": [
-    "_note/デジタルガーデン.md",
+    "books/index.md",
+    "diary/20251125.md",
     "diary/20251126.md",
     "diary/20260112.md",
+    "digitalworks/index.md",
+    "food/index.md",
+    "vrchat/index.md",
+    "bg_top.png",
+    "README.md",
+    "_notes",
+    "_note/デジタルガーデン.md",
     "diary/index.md",
     "_note",
     "assets/images/omote_kari.jpg",
-    "diary/20251125.md",
     "20260112.html.md",
-    "books/index.md",
-    "bg_top.png",
-    "assets/images",
-    "README.md"
+    "assets/images"
   ]
 }
