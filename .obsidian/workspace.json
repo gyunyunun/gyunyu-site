@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "books/index.md",
+                "file": "diary/20251125.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "20251125"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "日本語を学び直す"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,27 +197,27 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "8985c05f94c3c372",
+  "active": "072c81b7c18ac44e",
   "lastOpenFiles": [
+    "diary/20260112.md",
+    "diary/20251126.md",
+    "diary/20251125.md",
+    "diary/index.md",
+    "books/index.md",
+    "food/index.md",
+    "_note/デジタルガーデン.md",
+    "_note/日本語を学び直す.md",
     "articles/index.html",
     "articles",
-    "_note/デジタルガーデン.md",
     "_note/plurality 5-1,5-2を読んで.md",
-    "_note/日本語を学び直す.md",
     "無題のファイル.md",
     "_note/無題のファイル.md",
     "_note/てすと.md",
     "_note/ぬいぬい.md",
     "_note/~syncthing~ぬいぬい.md.tmp",
     "_note/~syncthing~てすと.md.tmp",
-    "food/index.md",
     "digitalworks/index.md",
-    "diary/index.md",
-    "diary/20251126.md",
-    "diary/20251125.md",
     "assets/images/omote_kari.jpg",
-    "books/index.md",
-    "diary/20260112.md",
     "vrchat/index.md",
     "bg_top.png",
     "README.md",
