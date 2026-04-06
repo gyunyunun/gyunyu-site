@@ -1,0 +1,156 @@
+---
+layout: null
+title: "記事一覧"
+permalink: /articles/
+---
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <style>
+      :root {
+        --card-bg: #ffffff;
+        --card-border: #e6e6e6;
+        --card-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        --text: #222;
+        --muted: #666;
+      }
+
+      body {
+        background: #fafafa;
+        color: var(--text);
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+          Arial, "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+        margin: 0;
+      }
+
+      .wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 28px 16px 48px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0 0 16px;
+      }
+
+      .lead {
+        margin: 0 0 22px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 560px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .card {
+        display: block;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 14px;
+        padding: 14px 14px 12px;
+        box-shadow: var(--card-shadow);
+        text-decoration: none;
+        color: inherit;
+        transition: transform 120ms ease, box-shadow 120ms ease;
+      }
+
+      .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.09);
+      }
+
+      .kicker {
+        font-size: 12px;
+        color: var(--muted);
+        margin: 0 0 6px;
+      }
+
+      .title {
+        font-size: 16px;
+        line-height: 1.45;
+        margin: 0 0 10px;
+        font-weight: 650;
+      }
+
+      .meta {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .pill {
+        border: 1px solid var(--card-border);
+        border-radius: 999px;
+        padding: 2px 8px;
+        background: #fff;
+      }
+
+      .toplinks {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 0 0 18px;
+      }
+
+      .toplinks a {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>{{ page.title }}</h1>
+      <p class="lead">いまは <span class="pill">diary</span> 配下の記事をカードで一覧化しています。</p>
+
+      <nav class="toplinks">
+        <a href="{{ '/' | relative_url }}">トップへ</a>
+        <a href="{{ '/diary/' | relative_url }}">日記へ</a>
+      </nav>
+
+      {%- assign diary_pages = site.pages
+        | where_exp: "p", "p.dir == '/diary/'"
+        | where_exp: "p", "p.name != 'index.md'"
+        | sort: "date"
+        | reverse
+      -%}
+
+      <section class="grid" aria-label="記事一覧">
+        {%- for p in diary_pages -%}
+          <a class="card" href="{{ p.url | relative_url }}">
+            <p class="kicker">diary</p>
+            <h2 class="title">{{ p.title | default: p.name }}</h2>
+            <div class="meta">
+              {%- if p.date -%}
+                <span class="pill">{{ p.date | date: "%Y-%m-%d" }}</span>
+              {%- endif -%}
+              <span class="pill">{{ p.url }}</span>
+            </div>
+          </a>
+        {%- endfor -%}
+      </section>
+    </main>
+  </body>
+</html>

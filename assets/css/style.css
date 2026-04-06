@@ -48,3 +48,38 @@ a:hover {
     
     /* 例3: 下線も色も変えない場合は、このブロックは削除しても構いません */
 }
+
+/* 記事一覧（カードレイアウト） */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-link {
+    display: block;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    padding: 14px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    color: inherit;
+    transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.card-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.09);
+}
