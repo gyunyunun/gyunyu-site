@@ -7,3 +7,7 @@ defaults:
       path: "diary"
     values:
       layout: "default"
+  - scope:
+      path: "words"
+    values:
+      layout: "default"

@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "diary/20260406.md",
+                "file": "words/庭いじり.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260406"
+              "title": "庭いじり"
             }
           },
           {
@@ -228,11 +228,14 @@
   },
   "active": "040be23b6cd4c467",
   "lastOpenFiles": [
-    "diary/index.md",
-    "diary/20260112.md",
+    "tools/obsidian_preprocess.py",
+    "tools",
     "diary/20260406.md",
-    "diary/もちもち.md",
-    "diary/庭いじり.md",
+    "diary/20260112.md",
+    "diary/index.md",
+    "words/もちもち.md",
+    "words",
+    "words/庭いじり.md",
     "diary/20251125.md",
     "diary/20251126.md",
     "books/index.md",
