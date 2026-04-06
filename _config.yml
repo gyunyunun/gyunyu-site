@@ -1,3 +1,9 @@
 title: 砂漠のさかな
 
 baseurl: "/gyunyu-site"
+
+defaults:
+  - scope:
+      path: "diary"
+    values:
+      layout: "default"
